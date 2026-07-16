@@ -1,101 +1,155 @@
-# 📊 JobTrackr
+# JobTrackr
 
-<p align="center">
-  <!-- Core stack -->
-  <img src="https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge" alt="Python">
-  <img src="https://img.shields.io/badge/Framework-Flask-000000?style=for-the-badge" alt="Flask">
-  <img src="https://img.shields.io/badge/Database-SQLAlchemy-CCA877?style=for-the-badge" alt="SQLAlchemy">
-  
-  <!-- Deployment & tools -->
-  <img src="https://img.shields.io/badge/Template-Jinja2-B41717?style=for-the-badge" alt="Jinja2">
-  <img src="https://img.shields.io/badge/Auth-Login%20Manager-4CAF50?style=for-the-badge" alt="Flask-Login">
-  
-  <!-- Project info -->
-  <img src="https://img.shields.io/badge/Hosted_on-PythonAnywhere-3F7DCE?style=for-the-badge" alt="Hosted on PythonAnywhere">
-  <img src="https://img.shields.io/badge/Status-Active--Live-success?style=for-the-badge" alt="Status: Active">
-  <img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge" alt="License: All Rights Reserved">
-</p>
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square\&logo=python\&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-Web%20Framework-000000?style=flat-square\&logo=flask\&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-ORM-D71F00?style=flat-square)
+![Jinja2](https://img.shields.io/badge/Jinja2-Templates-B41717?style=flat-square\&logo=jinja\&logoColor=white)
+![Flask-Login](https://img.shields.io/badge/Flask--Login-Authentication-3BABC3?style=flat-square)
+![PythonAnywhere](https://img.shields.io/badge/Hosted-PythonAnywhere-1D9FD7?style=flat-square\&logo=pythonanywhere\&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Active-success?style=flat-square)
 
+A full-stack job application tracker built with **Flask, SQLAlchemy, Bootstrap and Chart.js**.
 
-A simple yet powerful **Job Application Tracker** built with **Flask + SQLAlchemy + Bootstrap + Chart.js**.  
-Easily register, log in, and manage your job applications with a clean dashboard, filters, and visualizations.  
+JobTrackr allows users to register, manage their job applications, filter records, monitor application progress through analytics and export their data to CSV.
 
 ---
 
-## 🚀 Live Demo
-👉 [Try JobTrackr here](https://wkratos77.pythonanywhere.com)
+## Live Demo
 
-*(Test it out: register a free account, add jobs, filter, and see charts.)*
+[Try JobTrackr](https://wkratos77.pythonanywhere.com/)
 
----
-
-## 🚀 Features
-
-- 🔐 **User Authentication**  
-  - Register, Login, Logout (passwords securely hashed with Werkzeug).  
-
-- 📂 **Job CRUD**  
-  - Add, edit, delete, and list your job applications.  
-
-- 🔎 **Smart Dashboard**  
-  - Filters by **status**, **keyword search**, and **application month**.  
-  - Pagination for large job lists.  
-
-- 📊 **Analytics & Visualization**  
-  - Status breakdown pie chart.  
-  - Applications per month bar chart.  
-  - Summary counters (Applied / Interview / Offer / Rejected).  
-  - Quick interview/offer rates.  
-
-- 📥 **Data Export**  
-  - Export all your jobs to CSV for Excel/Google Sheets.  
-
-- 🎨 **Modern UI**  
-  - Styled with Bootstrap 5.  
-  - Responsive layout, clean tables, flash messages.  
+Create an account, add job applications, explore the dashboard and test the filtering and analytics features.
 
 ---
 
-## 🛠️ Tech Stack
+## Features
 
-- [Flask](https://flask.palletsprojects.com/) (Python web framework)  
-- [Flask-Login](https://flask-login.readthedocs.io/) (authentication/session management)  
-- [Flask-Migrate](https://flask-migrate.readthedocs.io/) + SQLAlchemy (ORM + migrations)  
-- [Bootstrap 5](https://getbootstrap.com/) (frontend styling)  
-- [Chart.js](https://www.chartjs.org/) (charts & data visualization)  
-- SQLite (default database, easy to run locally)  
+### Authentication
+
+* User registration
+* Secure login and logout
+* Password hashing with Werkzeug
+* User-specific application data
+
+### Job Application Management
+
+* Add new job applications
+* Edit existing applications
+* Delete applications
+* View applications in a structured dashboard
+* Track company, position, status and application date
+
+### Search and Filtering
+
+* Search by keyword
+* Filter applications by status
+* Filter applications by application month
+* Pagination for larger application lists
+
+### Analytics
+
+* Application status breakdown
+* Monthly application activity
+* Applied, interview, offer and rejection counters
+* Interview and offer conversion rates
+* Interactive charts powered by Chart.js
+
+### Data Export
+
+* Export application records to CSV
+* Compatible with Excel and Google Sheets
+
+### Interface
+
+* Responsive Bootstrap 5 layout
+* Dashboard cards and tables
+* Flash messages and form validation
+* Clean and accessible navigation
 
 ---
 
-## ⚙️ Setup & Installation
+## Tech Stack
+
+| Area                | Technology             |
+| ------------------- | ---------------------- |
+| Backend             | Python, Flask          |
+| Database            | SQLite, SQLAlchemy     |
+| Authentication      | Flask-Login, Werkzeug  |
+| Database migrations | Flask-Migrate, Alembic |
+| Templates           | Jinja2                 |
+| Frontend            | HTML, CSS, Bootstrap 5 |
+| Charts              | Chart.js               |
+| Deployment          | PythonAnywhere         |
+
+---
+
+## Installation
+
+### 1. Clone the repository
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/YOUR-USERNAME/jobtrackr.git
+git clone https://github.com/wkratos/jobtrackr.git
 cd jobtrackr
+```
 
-# 2. Create virtual environment
+### 2. Create a virtual environment
+
+Linux and macOS:
+
+```bash
 python3 -m venv .venv
-source .venv/bin/activate   # Linux/Mac
-.venv\Scripts\activate      # Windows
+source .venv/bin/activate
+```
 
-# 3. Install dependencies
+Windows PowerShell:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
+Windows Command Prompt:
+
+```cmd
+python -m venv .venv
+.venv\Scripts\activate.bat
+```
+
+### 3. Install the dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-# 4. Set environment variables (create .env file)
-# .env
+### 4. Configure the environment
+
+Create a `.env` file in the project root:
+
+```env
 FLASK_APP=app
 FLASK_ENV=development
-SECRET_KEY=your-secret-key
+SECRET_KEY=replace-this-with-a-secure-secret-key
+```
 
-# 5. Run migrations
+You can use `.env.example` as a reference.
+
+### 5. Apply database migrations
+
+```bash
 flask --app app db upgrade
+```
 
-# 6. Start the app
+### 6. Start the application
+
+```bash
 flask --app app run --debug
 ```
 
-Visit: http://127.0.0.1:5000
+Open:
+
+```text
+http://127.0.0.1:5000
+```
 
 ---
 
@@ -114,38 +168,90 @@ Visit: http://127.0.0.1:5000
 ![New Job Screenshot](docs/register.png)
 
 
----
+## Project Structure
 
-## 📂 Project Structure
-``` csharp
-jobtrackr/    
-├── app.py                         # Flask entrypoint    
-├── config.py                      # App configuration    
-├── extensions.py                  # db, migrate, login_manager    
-├── models.py                      # SQLAlchemy models    
-├── routes/                        # Blueprints (auth, jobs, main)      
-├── templates/                     # HTML templates (Jinja2)    
-├── static/                        # Static files    
-├── requirements.txt               # Dependencies    
-├── Procfile                       # (for deployment)    
-└── README.md               
+```text
+jobtrackr/
+├── app.py
+├── config.py
+├── extensions.py
+├── models.py
+├── routes/
+│   ├── auth.py
+│   ├── jobs.py
+│   └── main.py
+├── templates/
+├── static/
+├── migrations/
+├── docs/
+├── .env.example
+├── .gitignore
+├── Procfile
+├── requirements.txt
+└── README.md
 ```
+
+* `app.py` creates and configures the Flask application.
+* `config.py` contains application configuration.
+* `extensions.py` initializes shared Flask extensions.
+* `models.py` defines the database models.
+* `routes/` separates authentication, job and main application routes.
+* `templates/` contains Jinja2 templates.
+* `static/` contains styles and other static resources.
+* `migrations/` stores database migration history.
+
 ---
 
-## 🧭 Future Ideas
+## Completed Milestones
 
-- Deploy online.                       ☑️
+* User authentication
+* Complete job CRUD workflow
+* Search and filtering
+* Pagination
+* Dashboard statistics
+* Chart-based analytics
+* CSV export
+* Responsive interface
+* Database migrations
+* Online deployment
 
-- Add email reminders for interviews.
+---
 
-- Multi-user sharing / teams.
+## Roadmap
 
-- Dark mode.
+* Email reminders for interviews
+* Follow-up notifications
+* Dark mode
+* PostgreSQL production support
+* More detailed conversion analytics
+* Time-to-interview and time-to-offer statistics
+* User profile customization
+* Shared workspaces for teams
+* Automated tests
 
-- Switch to PostgreSQL for production
-  
-- Add job reminders / follow-up notifications
+---
 
-- More analytics (time-to-offer, conversion rates)
+## What I Learned
 
-- User profile customization
+This project helped me improve my understanding of:
+
+* Structuring a Flask application
+* Separating routes using blueprints
+* User authentication and session management
+* Relational database modelling
+* Database migrations
+* CRUD operations
+* Filtering and pagination
+* Server-side form processing
+* Data visualization
+* CSV generation
+* Deployment and environment configuration
+
+---
+
+## Author
+
+**wkratos**
+
+* GitHub: [@wkratos](https://github.com/wkratos)
+* 42/1337 login: `wkratos`
