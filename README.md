@@ -1,3 +1,5 @@
+<div align="center">
+
 # JobTrackr
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square\&logo=python\&logoColor=white)
@@ -19,6 +21,8 @@ JobTrackr allows users to register, manage their job applications, filter record
 [Try JobTrackr](https://wkratos77.pythonanywhere.com/)
 
 Create an account, add job applications, explore the dashboard and test the filtering and analytics features.
+
+</div>
 
 ---
 
