@@ -71,6 +71,7 @@ Create an account, add job applications, explore the dashboard and test the filt
 * Clean and accessible navigation
 
 ---
+
 <div align="center">
 
 ## Tech Stack
@@ -160,6 +161,8 @@ http://127.0.0.1:5000
 
 ---
 
+<div align="center">
+
 ## 📸 Screenshots
 
 ### Dashboard with Filters + Charts
@@ -174,6 +177,9 @@ http://127.0.0.1:5000
 ### Register Form
 ![New Job Screenshot](docs/register.png)
 
+</div>
+
+---
 
 ## Project Structure
 
