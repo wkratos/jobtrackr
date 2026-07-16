@@ -71,6 +71,7 @@ Create an account, add job applications, explore the dashboard and test the filt
 * Clean and accessible navigation
 
 ---
+<div align="center">
 
 ## Tech Stack
 
@@ -84,6 +85,8 @@ Create an account, add job applications, explore the dashboard and test the filt
 | Frontend            | HTML, CSS, Bootstrap 5 |
 | Charts              | Chart.js               |
 | Deployment          | PythonAnywhere         |
+
+</div>
 
 ---
 
